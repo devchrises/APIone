@@ -1,0 +1,6 @@
+@APIone_HostAddress = http://localhost:5045
+
+GET {{APIone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
