@@ -8,3 +8,31 @@ GET {{rootURL}}/api/Books
 Accept: application/json
 
 ###
+GET {{rootURL}}/api/Books/2
+Accept: application/json
+
+###
+POST {{rootURL}}/api/Books
+Content-Type: application/json
+
+{
+    "id": 7,
+    "author": "A7",
+    "title": "T7",
+    "yearPublished": 2007
+}
+
+###
+PUT {{rootURL}}/api/Books/7
+Content-Type: application/json
+
+{
+    "id": 9,
+    "author": "A9",
+    "title": "T9",
+    "yearPublished": 2009
+}
+
+###
+DELETE {{rootURL}}/api/Books/4
+Content-Type: application/json
