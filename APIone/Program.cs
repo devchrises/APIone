@@ -1,9 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
+
+/*
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -14,6 +17,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// <-- Esto habilita las rutas de los Controllers con atributos ([Route], [HttpGet], etc.)
+app.MapControllers();
+
+/*
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -32,10 +39,13 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
+*/
 
 app.Run();
 
+/*
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+*/
