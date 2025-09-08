@@ -3,3 +3,58 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.vs/
+*.user
+bin/
+obj/
+
+###################################################
+
+# Archivos específicos del usuario
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.env
+
+# Archivos generados por MonoDevelop/Xamarin Studio
+*.userprefs
+
+# Archivos generados por Visual Studio
+*.ncb
+*.sdf
+*.cache
+*.dbmdl
+*.opendb
+*.pdb
+*.psess
+*.vsp
+*.vspx
+*.vsps
+*.vssscc
+*.vsix
+*.vsixmanifest
+.vscode/
+.idea/
+
+# Archivos de NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+*.csproj.user
+
+# Archivos de Tye
+.tye/
+
+# Archivos de Rider
+.idea/
+
+# Archivos de respaldo
+*~
+*.bak
+*.tmp
+
