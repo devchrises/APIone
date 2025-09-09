@@ -8,7 +8,7 @@ GET {{rootURL}}/api/Books
 Accept: application/json
 
 ###
-GET {{rootURL}}/api/Books/2
+GET {{rootURL}}/api/Books/3
 Accept: application/json
 
 ###
@@ -16,14 +16,13 @@ POST {{rootURL}}/api/Books
 Content-Type: application/json
 
 {
-    "id": 7,
     "author": "A7",
     "title": "T7",
     "yearPublished": 2007
 }
 
 ###
-PUT {{rootURL}}/api/Books/7
+PUT {{rootURL}}/api/Books/1
 Content-Type: application/json
 
 {
@@ -34,5 +33,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{rootURL}}/api/Books/4
+DELETE {{rootURL}}/api/Books/1
 Content-Type: application/json
